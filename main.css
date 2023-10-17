@@ -7,11 +7,45 @@ body{
     margin: 0%;
 }
 
-.main_block{
+header{
+    height: 115px;
+    z-index: 200;
+    position: absolute;
     width: 100%;
-    height: 100%;
+    border-bottom: 1px solid rgba(125, 125, 125, 0.5);
+    display: flex;
 }
 
-#first_screen img {
+.navigation{
+    display: flex;
+}
+
+.navigation-button{
+    padding: 25px;
+    font-family: 'MyriadPro Regular';
+    font-size: 13pt;
+    color: aliceblue;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.navigation-button:hover{
+    border-bottom: 4px solid rgb(0, 255, 242);
+    transition: 0.2s ease;
+}
+
+.main-block{
     width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+}
+
+#first-screen img {
+    width: 100%;
+}
+
+#logo{
+    margin: 15px 200px;
 }
