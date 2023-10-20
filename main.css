@@ -1,3 +1,7 @@
+*{
+    max-width: 1600px;
+}
+
 @font-face {
     font-family: Myriad;
     src: url(fonts/Myriad\ Pro.ttf);
@@ -48,6 +52,7 @@ header{
 .navigation-button:hover{
     border-bottom: 4px solid rgb(17, 116, 158);
     transition: 0.1s ease;
+    cursor: pointer;
 }
 
 .main-block{
@@ -67,6 +72,7 @@ header{
     padding: 15px;
     align-items: center;
     display: flex;
+    cursor: pointer;
 }
 
 .circle{
@@ -196,4 +202,5 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
