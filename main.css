@@ -18,6 +18,11 @@
     src: url(fonts/Myriad\ Pro.ttf);
 }
 
+@font-face {
+    font-family: RobotoBoldCondensed;
+    src: url(fonts/RobotoCondensed-Bold.ttf);
+}
+
 * {
     max-width: 1600px;
     margin: 0 auto;
@@ -37,6 +42,11 @@ body {
     height: 100%;
 }
 
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
 /* ---------------------- header ---------------------- */
 
 header{
@@ -250,6 +260,13 @@ header{
     align-items: center;
     justify-content: center;
 }
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+
 
 /* news screen ///////////////////////*/
 
@@ -440,13 +457,310 @@ header{
 
 
 
+/*---------quick_screen--------*/
+.quick_screen {
+    background-image: url(images/quick_action_screen.jpg);
+    width: 100%;
+    height: 355px;
+}
+
+.quick_container {
+    padding-left: 156px;
+    padding-top: 113px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.quick_item {
+    width: 558px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 63px;
+}
+
+.quick_item:last-of-type {
+margin-left: -150px;
+}
+
+.quick_text p {
+    font-family: GothamBook;
+    font-size: 13px;
+    color: #f5f5f5;
+    letter-spacing: 1px;
+    line-height: 23px;
+    margin-left: 35px;
+}
+
+/*-------features_screen-------*/
+
+.features_screen {
+    background: url(images/features_screen.jpg);
+    width: 100%;
+    height: 849px;
+}
+
+.features_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.box_container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-top: 442px;
+    margin-left: 225px;
+}
+
+.feature_box {
+    height: 38px;
+    margin-left: 0;
+    margin-bottom: 26px;
+    background-color: #11749e;     
+}
+
+.feature_box p {
+    padding-left: 19px;
+    padding-bottom: 14px;
+    padding-top: 11px;
+    font-family: GothamMedium;
+    font-size: 13.6px;
+    text-transform: uppercase;
+    color: #f5f5f5;
+    letter-spacing: 1px;
+}
+
+.feature_box.first {
+    width: 370px;
+}
+
+.feature_box.second {
+    width: 400px;
+}
+
+.feature_box.third {
+    width: 428px;
+}
+
+.features_phone {
+    margin-left: 86px;
+    margin-top: 89px;
+    width: 317px;
+    height: 651px;
+}
+
+.feature_text {
+    position: absolute;
+    z-index: 0;
+    width: 694px;
+}
+
+.features_column_text {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 24px;  
+    margin-left: 228px;
+    font-family: GothamBook;
+    font-size: 12.9px;
+    color: #f5f5f5;
+    letter-spacing: 1px;
+    line-height: 23px;
+}
+
+.features_title {
+    margin-top: 228px;
+    font-family: GothamMedium;
+    font-size: 24.3px;
+    margin-bottom: 31px;
+    margin-left: 228px;
+    font-weight: 100;
+    letter-spacing: .5px;
+    color: #f5f5f5;
+}
+
 /* ---------------------- team screen ---------------------- */
 
 .column.team {
     position: relative;
+    z-index: 0;
+}
 
+.column_subtitle.team {
+    margin-top: 314px;
+}
+
+.columns_box.team {
+    margin-top: 100px;
+}
+
+.team_image {
+    position: relative;
+    /* z-index: 1; */
 }
 
 .name_box {
-    
+    position: absolute;
+    z-index: 100;
+    width: 216px;
+    height: 75px;
+    padding: 10px 0;
+    background-color: #ffffff;
+    top: 365px;
+    left: 30px;
+}
+
+.column_text.name {
+    font-family: GothamMedium;
+    font-size: 20px;
+    color: #11749e;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.column_text.profession {
+    margin-top: 8px;
+    font-family: GothamMedium;
+    font-size: 15px;
+}
+
+/* first screen */
+
+.last_screen{
+    font-family: GhotamBook;
+    font-size: 15pt;
+    width: 100%;
+    height: 922px;
+    margin: 0;
+    background-image: url(images/back.png);
+    background-size: cover;
+    z-index: 100;
+    position: relative;
+}
+
+/* text on first screen*/
+
+.text_half{
+    padding: 237px 0 167px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.C{
+    font-family: RobotoBoldCondensed;
+    color: white;
+    opacity: 19%;
+    font-size: 186pt;
+    z-index: 100;
+    position: absolute;
+}
+
+.about_project{
+    font-family: GhotamMedium;
+    position: absolute;
+    font-size: 27.8pt;
+    color: white;
+    z-index: 200;
+}
+
+.first_edit_line{
+    margin: 0 215px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.center_edit{
+    margin: auto 30px;
+}
+
+.first_edit_line input{
+    border: 1px solid white;
+    width: 33%;
+    padding: 16px 20px 12px;
+    font-family: GhotamBook;
+    font-size: 11.5pt;
+    color: #ffffff;
+    background: none;
+}
+
+.edit_input::placeholder{
+    color: #ffffff;
+    opacity: 1;
+}
+
+.second_edit_line{
+    margin: 40px 215px;
+    display: flex;
+}
+
+.second_edit_line input{
+    width: 100%;
+    padding: 16px 22px 114px;
+    font-family: GhotamBook;
+    font-size: 11.5pt;
+    color: white;
+    border: 1px solid white;
+    background: none;
+}
+
+.button{
+    margin: 45px;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+.button a{
+    font-size: 16.5pt;
+    text-align: center;
+    width: 227px;
+    padding: 15px 0 24px;
+    background-color: #11749e;
+    color: white;
+    text-decoration: none;
+}
+
+.button a:hover{
+    background-color: white;
+    color: #11749e;
+    transition: .15s ease;
+    cursor: pointer;
+}
+
+/* second screen - map*/
+
+.map{
+    margin-top: -70px;
+    width: 100%;
+    height: 332px;
+    background-image: url(images/map.png);
+    background-size: cover;
+    z-index: 200;
+    position: relative;
+}
+
+/* footer */
+
+footer{
+    height: 114px;
+    width: 100%;
+    background-color: #222222;
+    align-items: center;
+    display: flex;
+}
+
+footer span{
+    width: 50%;
+    padding-left: 60px;
+    font-family: Roboto;
+    font-size: 10pt;
+    color: white;
+}
+
+footer div{
+    justify-content: right;
+    padding-right: 100px;
 }
